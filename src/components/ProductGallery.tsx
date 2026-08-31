@@ -4,6 +4,14 @@ import Image from "next/image";
 import { useState } from "react";
 import type { ProductImage } from "@/types/toyota";
 import { cn } from "@/lib/utils";
+import { Facebook, Twitter, Mail, Linkedin } from "@/components/icons";
+
+const shareLinks = [
+  { label: "Facebook", Icon: Facebook, className: "bg-[#3b5998]" },
+  { label: "Twitter", Icon: Twitter, className: "bg-[#1da1f2]" },
+  { label: "Email", Icon: Mail, className: "bg-[#446084]" },
+  { label: "LinkedIn", Icon: Linkedin, className: "bg-[#0077b5]" },
+];
 
 export function ProductGallery({
   images,
@@ -44,6 +52,20 @@ export function ProductGallery({
           ))}
         </div>
       )}
+      <div className="mt-4 flex gap-2">
+        {shareLinks.map(({ label, Icon, className }) => (
+          <span
+            key={label}
+            aria-label={label}
+            className={cn(
+              "flex size-8 items-center justify-center rounded text-white",
+              className
+            )}
+          >
+            <Icon className="size-4" />
+          </span>
+        ))}
+      </div>
     </div>
   );
 }

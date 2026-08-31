@@ -9,6 +9,7 @@ import {
   NewsWidget,
   VideoWidget,
 } from "@/components/HomeInfoWidgets";
+import Image from "next/image";
 import { products } from "@/lib/data";
 
 export default function Home() {
@@ -19,15 +20,15 @@ export default function Home() {
         <HeroCarousel />
 
         <div className="mx-auto max-w-[1200px] px-4 py-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr]">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[268px_1fr]">
             <aside className="hidden lg:block">
               <CategorySidebar />
             </aside>
 
-            <div className="space-y-10">
+            <div className="space-y-8">
               <section>
                 <SectionHeading>Sản phẩm mới</SectionHeading>
-                <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-5">
                   {products.map((p) => (
                     <ProductCard key={p.slug} product={p} />
                   ))}
@@ -35,8 +36,8 @@ export default function Home() {
               </section>
 
               <section>
-                <SectionHeading>Vios</SectionHeading>
-                <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+                <SectionHeading>Vioss</SectionHeading>
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-5">
                   {products.map((p) => (
                     <ProductCard key={p.slug} product={p} />
                   ))}
@@ -45,7 +46,7 @@ export default function Home() {
 
               <section>
                 <SectionHeading>Innova</SectionHeading>
-                <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-5">
                   {products.map((p) => (
                     <ProductCard key={p.slug} product={p} />
                   ))}
@@ -54,7 +55,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 gap-8 border-t border-border pt-8 md:grid-cols-3">
+          <div className="mt-8">
+            <Image
+              src="/images/quang-cao-toyota-da-nang-8193.jpg"
+              alt=""
+              width={1000}
+              height={175}
+              className="h-auto w-full"
+            />
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-8 border-t border-[#e6e6e6] pt-8 md:grid-cols-3">
             <NewsWidget />
             <VideoWidget />
             <FanpageWidget />

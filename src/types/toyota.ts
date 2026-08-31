@@ -37,6 +37,7 @@ export interface NewsArticle {
   image: string;
   excerpt: string;
   body: string[];
+  promoted?: boolean;
 }
 
 export interface PolicyPage {

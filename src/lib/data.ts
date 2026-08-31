@@ -95,7 +95,7 @@ export const products: Product[] = [
     slug: "vios-1-5e-cvt",
     name: "Vios 1.5E (CVT)",
     categorySlug: "vios",
-    price: "531,000,000 ₫",
+    price: "569,000,000 ₫",
     thumbnail: "/images/vios-et-9465.jpg",
     images: [{ src: "/images/vios-et-9465.jpg", alt: "Vios 1.5E (CVT)" }],
     colors: ["Bạc", "Đen", "Nâu Vàng", "Trắng"],
@@ -114,7 +114,7 @@ export const products: Product[] = [
     slug: "vios-1-5g-cvt",
     name: "Vios 1.5G (CVT)",
     categorySlug: "vios",
-    price: "531,000,000 ₫",
+    price: "606,000,000 ₫",
     thumbnail: "/images/vios-gt-6509.jpg",
     images: [{ src: "/images/vios-gt-6509.jpg", alt: "Vios 1.5G (CVT)" }],
     colors: ["Bạc", "Đen", "Nâu Vàng", "Trắng"],
@@ -151,11 +151,12 @@ export const newsArticles: NewsArticle[] = [
     date: "15/06/2019",
     author: "Trần Hoàng Quân",
     image: sharedNewsImage,
+    promoted: true,
     excerpt:
-      "Toyota Việt Nam giới thiệu phiên bản Hilux cải tiến cùng chuỗi dịch vụ giá trị gia tăng dành cho khách hàng.",
+      "Toyota Việt Nam chính thức giới thiệu loạt phim ngắn về “Chuỗi dịch vụ giá trị gia tăng” với sự góp mặt của diễn viên chính là nghệ sỹ nhạc Rap Suboi – đồng thời cũng là Đại sứ thương hiệu của Toyota Việt Nam.",
     body: [
-      "Toyota Việt Nam công bố phiên bản Hilux cải tiến năm 2018, đi kèm chiến dịch truyền thông giới thiệu chuỗi dịch vụ giá trị gia tăng dành cho khách hàng, với sự đồng hành của một gương mặt nghệ sỹ được chọn làm đại sứ thương hiệu.",
-      "Hoạt động nằm trong chiến dịch nâng cao chất lượng dịch vụ mà Toyota Việt Nam triển khai nhằm mang lại trải nghiệm mua xe và hậu mãi thuận tiện hơn cho khách hàng, trong đó có gói hỗ trợ tài chính mua xe với thủ tục đơn giản và lãi suất ưu đãi.",
+      "Toyota Việt Nam chính thức giới thiệu loạt phim ngắn về “Chuỗi dịch vụ giá trị gia tăng” với sự góp mặt của diễn viên chính là nghệ sỹ nhạc Rap Suboi – đồng thời cũng là Đại sứ thương hiệu của Toyota Việt Nam. Đây là một hoạt động nằm trong chiến dịch nâng cao chất lượng Toyota – “NO QUALITY.NO LIFE” (Chất lượng làm nên tất cả) mà TMV chính thức triển khai từ tháng 9/2017.",
+      "“Dịch vụ tài chính Toyota” là dịch vụ hỗ trợ tài chính một cửa khi mua xe tại các đại lý Toyota tại Việt Nam với thủ tục đơn giản, tiện lợi và vô cùng nhanh chóng, giúp khách hàng có thể tiết kiệm thời gian một cách tối đa, trong khi mức lãi suất lại vô cùng hấp dẫn",
     ],
   },
   {
@@ -165,10 +166,10 @@ export const newsArticles: NewsArticle[] = [
     author: "Trần Hoàng Quân",
     image: sharedNewsImage,
     excerpt:
-      "Phiên bản Fortuner 2018 được Toyota Việt Nam giới thiệu cùng loạt hoạt động nâng cao chất lượng dịch vụ khách hàng.",
+      "Toyota Việt Nam chính thức giới thiệu loạt phim ngắn về “Chuỗi dịch vụ giá trị gia tăng” với sự góp mặt của diễn viên chính là nghệ sỹ nhạc Rap Suboi – đồng thời cũng là Đại sứ thương hiệu của Toyota Việt Nam.",
     body: [
-      "Tiếp nối chiến dịch cải tiến sản phẩm, Toyota Việt Nam giới thiệu phiên bản Fortuner 2018 với nhiều nâng cấp, đồng thời đẩy mạnh các dịch vụ hỗ trợ khách hàng sau bán hàng.",
-      "Chương trình được xây dựng nhằm mang lại sự thuận tiện tối đa cho khách hàng khi trải nghiệm dịch vụ tại hệ thống đại lý Toyota trên toàn quốc.",
+      "Toyota Việt Nam chính thức giới thiệu loạt phim ngắn về “Chuỗi dịch vụ giá trị gia tăng” với sự góp mặt của diễn viên chính là nghệ sỹ nhạc Rap Suboi – đồng thời cũng là Đại sứ thương hiệu của Toyota Việt Nam. Đây là một hoạt động nằm trong chiến dịch nâng cao chất lượng Toyota – “NO QUALITY.NO LIFE” (Chất lượng làm nên tất cả) mà TMV chính thức triển khai từ tháng 9/2017.",
+      "“Dịch vụ tài chính Toyota” là dịch vụ hỗ trợ tài chính một cửa khi mua xe tại các đại lý Toyota tại Việt Nam với thủ tục đơn giản, tiện lợi và vô cùng nhanh chóng, giúp khách hàng có thể tiết kiệm thời gian một cách tối đa, trong khi mức lãi suất lại vô cùng hấp dẫn",
     ],
   },
   {
@@ -178,10 +179,10 @@ export const newsArticles: NewsArticle[] = [
     author: "Trần Hoàng Quân",
     image: sharedNewsImage,
     excerpt:
-      "Toyota Việt Nam ra mắt loạt phim ngắn giới thiệu chuỗi dịch vụ giá trị gia tăng dành cho khách hàng.",
+      "Toyota Việt Nam chính thức giới thiệu loạt phim ngắn về “Chuỗi dịch vụ giá trị gia tăng” với sự góp mặt của diễn viên chính là nghệ sỹ nhạc Rap Suboi – đồng thời cũng là Đại sứ thương hiệu của Toyota Việt Nam.",
     body: [
-      "Toyota Việt Nam chính thức ra mắt loạt phim ngắn giới thiệu chuỗi dịch vụ giá trị gia tăng, một phần trong chiến dịch nâng cao chất lượng dịch vụ được triển khai trên toàn hệ thống đại lý.",
-      "Loạt phim tập trung giới thiệu các tiện ích và chính sách hỗ trợ tài chính, bảo hành, giúp khách hàng an tâm hơn trong suốt quá trình sở hữu và sử dụng xe.",
+      "Toyota Việt Nam chính thức giới thiệu loạt phim ngắn về “Chuỗi dịch vụ giá trị gia tăng” với sự góp mặt của diễn viên chính là nghệ sỹ nhạc Rap Suboi – đồng thời cũng là Đại sứ thương hiệu của Toyota Việt Nam. Đây là một hoạt động nằm trong chiến dịch nâng cao chất lượng Toyota – “NO QUALITY.NO LIFE” (Chất lượng làm nên tất cả) mà TMV chính thức triển khai từ tháng 9/2017.",
+      "“Dịch vụ tài chính Toyota” là dịch vụ hỗ trợ tài chính một cửa khi mua xe tại các đại lý Toyota tại Việt Nam với thủ tục đơn giản, tiện lợi và vô cùng nhanh chóng, giúp khách hàng có thể tiết kiệm thời gian một cách tối đa, trong khi mức lãi suất lại vô cùng hấp dẫn",
     ],
   },
 ];
@@ -193,7 +194,7 @@ export const policyPages: PolicyPage[] = [
     title: "Chính sách hỗ trợ khách hàng",
   },
   { slug: "chinh-sach-dat-hang", title: "Chính sách đặt hàng" },
-  { slug: "ho-tro-mua-hang", title: "Hỗ trợ mua hàng" },
+  { slug: "ho-tro-mua-hang", title: "Hướng dẫn mua hàng" },
   { slug: "huong-dan-thanh-toan", title: "Hướng dẫn thanh toán" },
   { slug: "huong-dan-giao-nhan", title: "Hướng dẫn giao nhận" },
 ];
@@ -208,10 +209,10 @@ export const aboutContent = {
   subtitle: "KÍNH CHÀO QUÝ KHÁCH",
   image: "/images/gioi-thieu-143.jpg",
   paragraphs: [
-    "Tiền thân là một trạm bảo dưỡng, sửa chữa ô tô được thành lập năm 1993 để phục vụ nhu cầu của thị trường miền Trung, đơn vị dần khẳng định uy tín và được Toyota Việt Nam công nhận là trạm dịch vụ ủy quyền khu vực miền Trung.",
-    "Ngày 20/12/2000, Toyota Đà Nẵng chính thức khai trương tại Quận Hải Châu, Đà Nẵng, với đội ngũ nhân sự ban đầu gồm hơn hai mươi cán bộ nhân viên tâm huyết. Chỉ sau năm đầu hoạt động, đại lý đã đạt doanh số hàng trăm xe cùng hàng nghìn lượt xe dịch vụ — một khởi đầu đáng khích lệ cho thị trường còn nhiều mới mẻ lúc bấy giờ.",
-    "Qua từng giai đoạn phát triển, doanh số bán hàng và lượng xe vào dịch vụ của Toyota Đà Nẵng liên tục tăng trưởng, khẳng định vị thế là một trong những đại lý ủy quyền tiêu biểu của Toyota tại khu vực miền Trung – Tây Nguyên.",
-    "Với phương châm lấy sự hài lòng của khách hàng làm trọng tâm, Toyota Đà Nẵng không ngừng đầu tư cơ sở vật chất, đào tạo đội ngũ kỹ thuật viên và mở rộng dịch vụ nhằm mang đến trải nghiệm mua xe và sử dụng xe tốt nhất cho khách hàng.",
-    "Năm 2013, Toyota Đà Nẵng khai trương thêm cơ sở mới với quy mô lớn hơn, được đầu tư khang trang hiện đại theo tiêu chuẩn của Toyota, nâng cao đáng kể năng lực phục vụ khách hàng cả về bán hàng lẫn dịch vụ hậu mãi.",
+    "Năm 1993, Trạm bảo dưỡng, sửa chữa xe ô tô du lịch Đà Nẵng được khởi động để đáp ứng nhu cầu hoàn toàn mới mẻ tại thị trường miền Trung. Hơn năm sau đó, trạm sửa chữa đã trở thành một địa chỉ lớn và uy tín về dịch vụ sửa chữa xe tại Đà Nẵng, và được Công ty ô tô Toyota Việt Nam (TMV) công nhận là “Trạm dịch vụ Ủy quyền của Toyota tại miền Trung” – TASS. Cùng với đó, TMV còn tích cực hỗ trợ đào tạo cán bộ và nhân viên kỹ thuật theo định kỳ và cung cấp trang thiết bị, đặc biệt là trang thiết bị chuyên dùng phục vụ cho việc sửa chữa các loại ô tô hiện đại theo đúng tiêu chuẩn của Toyota toàn cầu.",
+    "Tiếp theo đà phát triển này, ngày 20/12/2000, Xí nghiệp Toyota Da Nang chính thức được khai trương tại địa chỉ 151 – 153 Lê Đình Lý, Quận Hải Châu, Thành phố Đà Nẵng. Với tổng vốn đầu tư ban đầu hơn 7,7 tỷ đồng, Toyota Đà Nẵng có khu nhà xưởng khang trang, sạch sẽ trên lô đất rộng 3.800 m2. Ban đầu, toàn xí nghiệp chỉ có 26 cán bộ nhân viên, song tất cả đều là những người có tâm huyết, nhiệt tình và tinh thần học hỏi. Với những nỗ lực của tập thể cán bộ nhân viên, sự chỉ đạo của Ban Giám đốc Xí nghiệp, sự hỗ trợ giúp đỡ của Công ty ô tô Toyota Việt Nam và đơn vị quản lý trực tiếp là Công ty Phú Tài – QK5, chỉ sau hơn một năm Toyota Đà Nẵng đã ghi được dấu ấn khi doanh số bán hàng đạt được 181 xe và 2.650 lượt xe dịch vụ. Đây là một sự khởi đầu nhỏ cho một thị trường miền Trung được đánh giá là còn khá mới mẻ và khó khăn.",
+    "Cuối năm 2003 doanh số lũy kế chạm mốc 1.000 xe và đến tháng 9 năm 2010, đúng 10 năm sau ngày khai trương Toyota Đà Nẵng đạt mốc 5.000 xe, dịch vụ cũng đã đạt mức 2.300 lượt xe/tháng. Có thể đối với các Đại lý khác thì thời gian đạt mốc 5.000 xe thì mất đến 10 năm là chậm nhưng đối với thị trường Miền Trung – Tây Nguyên thì đây là một thành tích đáng kể. Sau 10 năm, sản lượng bán hàng của Toyota Đà Nẵng tăng hơn 6 lần (tăng trưởng hơn 20% / năm).",
+    "Xác định rõ niềm tin của khách hàng chinh là sức mạnh của doanh nghiệp ,Toyota Đà Nẵng rất chú trọng đến công tác chăm sóc khách hàng. Không chỉ tiếp đón tận tình mọi khách hàng đến tham quan, mua sản phẩm và sử dụng dịch vụ của công ty mà Toyota Đà Nẵng còn thành lập một bộ phận riêng làm nhiệm vụ như chăm sóc khách hàng, như điện thoại, gửi thư nhắc khách hàng lịch bảo dưỡng xe, thông báo các chương trình khuyến mại ưu đãi, hay thăm hỏi những khách hàng cũ như những người thân của gia đình. Ngoài các chương trình chung của TMV, Toyota Đà Nẵng còn thực hiện các chương trình khuyến mại riêng để tạo thêm niềm vui cho từng khách hàng.",
+    "Ngày 18 tháng 8 năm 2013, Toyota Đà Nẵng chính thức khai trương cơ sở mới tại 69-71 Duy Tân, P.Hòa Thuận Tây, Q.Hải Châu, TP.Đà Nẵng. Cơ sở mới có diện tích 5.165m2, xây dựng 4 tầng. Tổng mức đầu tư lên đến 70 tỷ đồng. Cơ sở mới được đầu tư khang trang hiện đại theo tiêu chuẩn của Toyota Việt Nam với công suất thiết kế lên đến 3.000 xe bán và 60.000 lượt xe dịch vụ /năm.",
   ],
 };

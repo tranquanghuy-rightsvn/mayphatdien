@@ -30,6 +30,7 @@ export function ProductTabs({ product }: { product: Product }) {
         {active === 0 ? (
           <div className="space-y-3">
             <p className="text-base font-semibold">{product.description}</p>
+            <p className="font-semibold">606.000.000 VND</p>
             <ul className="list-inside list-disc space-y-1 text-muted-foreground">
               <li>Số chỗ ngồi: {product.seats}</li>
               <li>Kiểu dáng: {product.bodyType}</li>

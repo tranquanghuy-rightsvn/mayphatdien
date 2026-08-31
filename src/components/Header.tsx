@@ -23,33 +23,46 @@ export function Header() {
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
 
   return (
-    <header className="relative z-50 bg-white">
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-4 py-4">
+    <header
+      className="relative z-50"
+      style={{
+        backgroundImage: "url(/images/bg-header.png)",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top center",
+        backgroundSize: "100% auto",
+      }}
+    >
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-4 py-3">
         <Link href="/" className="shrink-0">
           <Image
             src={siteInfo.logo}
             alt={siteInfo.name}
             width={312}
             height={74}
-            className="h-[52px] w-auto"
+            className="h-12 w-auto object-contain"
             priority
           />
         </Link>
 
-        <div className="hidden items-center gap-6 lg:flex">
-          <div className="flex items-center gap-2">
-            <Phone className="size-4 text-foreground" />
-            <span className="text-sm text-foreground">
+        <div className="hidden items-center gap-8 lg:flex">
+          <div className="flex items-center gap-1.5">
+            <span className="flex size-4 shrink-0 items-center justify-center rounded-[3px] bg-black">
+              <Phone className="size-2.5 text-white" fill="white" />
+            </span>
+            <span className="text-[13.6px] font-normal text-black">
               {siteInfo.hotline.split("–")[0].trim()}
             </span>
           </div>
-          <div className="flex items-center rounded border border-border px-3 py-1.5">
+          <div className="flex items-center overflow-hidden rounded border border-[#dddddd] bg-white">
             <input
               type="search"
               placeholder="Nhập từ khóa tìm kiếm..."
-              className="w-48 bg-transparent text-sm outline-none placeholder:text-muted-foreground"
+              className="w-[240px] bg-transparent px-3 py-2 text-[13px] outline-none placeholder:text-[#999]"
             />
-            <button aria-label="Tìm kiếm" className="text-foreground">
+            <button
+              aria-label="Tìm kiếm"
+              className="flex h-9 w-10 items-center justify-center bg-primary text-white hover:bg-[#cc0000]"
+            >
               <Search className="size-4" />
             </button>
           </div>
@@ -65,28 +78,27 @@ export function Header() {
         </button>
       </div>
 
-      <nav className="hidden bg-white lg:block">
-        <ul className="mx-auto flex max-w-[1200px] items-stretch px-4">
-          {navItems.map((item, i) => {
+      <nav className="hidden lg:block">
+        <ul className="mx-auto flex max-w-[1200px] items-stretch">
+          {navItems.map((item) => {
             const active =
               item.href === "/"
                 ? pathname === "/"
                 : pathname.startsWith(item.href);
             return (
-              <li
-                key={item.href}
-                className={cn("group relative", i > 0 && "-ml-2")}
-                style={{ zIndex: navItems.length - i }}
-              >
+              <li key={item.href} className="group relative">
                 <Link
                   href={item.href}
                   className={cn(
-                    "relative flex items-center gap-1 whitespace-nowrap bg-[#f2f2f2] px-6 py-3.5 text-sm font-bold uppercase text-[#446084] transition-colors hover:bg-white hover:text-primary",
-                    active && "bg-white text-primary shadow-[0_2px_0_0_theme(colors.primary)]"
+                    "relative flex items-center gap-1 whitespace-nowrap px-5 py-[13px] text-[13px] font-bold uppercase tracking-wide text-[#716f6b] transition-colors hover:text-primary",
+                    active && "font-bold text-[rgba(17,17,17,0.85)]"
                   )}
                   style={{
-                    clipPath:
-                      "polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%)",
+                    backgroundImage: active
+                      ? "url(/images/menu-rollover.png)"
+                      : "url(/images/menu-arrow.png)",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: active ? "100% 100%" : "100% 0%",
                   }}
                 >
                   {item.label}
@@ -152,7 +164,7 @@ export function Header() {
                   <div className="flex items-center justify-between">
                     <Link
                       href={item.href}
-                      className="block flex-1 px-4 py-3 text-sm font-bold uppercase text-[#446084]"
+                      className="block flex-1 px-4 py-3 text-[13px] font-bold uppercase text-[#666666]"
                       onClick={() => setMobileOpen(false)}
                     >
                       {item.label}

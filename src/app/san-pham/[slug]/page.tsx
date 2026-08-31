@@ -3,6 +3,8 @@ import { StandardPageLayout } from "@/components/StandardPageLayout";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ProductGallery } from "@/components/ProductGallery";
 import { ProductTabs } from "@/components/ProductTabs";
+import { ProductCard } from "@/components/ProductCard";
+import { SectionHeading } from "@/components/SectionHeading";
 import { categories, products } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -29,6 +31,7 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const category = categories.find((c) => c.slug === product.categorySlug);
+  const relatedProducts = products.filter((p) => p.slug !== product.slug);
 
   return (
     <StandardPageLayout
@@ -84,6 +87,17 @@ export default async function ProductPage({
       </div>
 
       <ProductTabs product={product} />
+
+      {relatedProducts.length > 0 && (
+        <section className="mt-10">
+          <SectionHeading>Sản phẩm tương tự</SectionHeading>
+          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-5">
+            {relatedProducts.map((p) => (
+              <ProductCard key={p.slug} product={p} />
+            ))}
+          </div>
+        </section>
+      )}
     </StandardPageLayout>
   );
 }

@@ -48,8 +48,14 @@ export function VideoWidget() {
   return (
     <div>
       <WidgetHeading>Video clip</WidgetHeading>
-      <div className="flex aspect-video items-center justify-center rounded bg-muted/40 text-xs text-muted-foreground">
-        Video đang được cập nhật
+      <div className="aspect-video overflow-hidden rounded">
+        <iframe
+          src="https://www.youtube.com/embed/M17OKq6_qi8?feature=oembed"
+          title="Video clip"
+          className="h-full w-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </div>
     </div>
   );
@@ -59,8 +65,15 @@ export function FanpageWidget() {
   return (
     <div>
       <WidgetHeading>Fanpage</WidgetHeading>
-      <div className="flex aspect-video items-center justify-center rounded bg-muted/40 text-xs text-muted-foreground">
-        Fanpage đang được cập nhật
+      <div className="aspect-video overflow-hidden rounded">
+        <iframe
+          src="https://www.facebook.com/v2.9/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2F&tabs=timeline&width=340&height=200&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"
+          title="Fanpage"
+          className="h-full w-full"
+          style={{ border: "none", overflow: "hidden" }}
+          scrolling="no"
+          allow="encrypted-media"
+        />
       </div>
     </div>
   );

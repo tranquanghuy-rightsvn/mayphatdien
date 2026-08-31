@@ -9,12 +9,19 @@ export function CategorySidebar() {
     <div className="space-y-6">
       <div>
         <SidebarHeading>Danh mục sản phẩm</SidebarHeading>
-        <ul className="divide-y divide-border border border-t-0 border-border">
+        <ul>
           {categories.map((cat) => (
-            <li key={cat.slug}>
+            <li
+              key={cat.slug}
+              style={{
+                backgroundImage: "url(/images/bg_li.jpg)",
+                backgroundRepeat: "repeat-x",
+                backgroundPosition: "50% 0%",
+              }}
+            >
               <Link
                 href={`/danh-muc/${cat.slug}`}
-                className="block px-4 py-2.5 text-sm uppercase text-foreground hover:bg-muted hover:text-primary"
+                className="block py-1.5 pl-2.5 text-base uppercase text-[#334862] hover:text-primary"
               >
                 {cat.name}
               </Link>
@@ -25,7 +32,7 @@ export function CategorySidebar() {
 
       <div>
         <SidebarHeading>Hỗ trợ bán hàng</SidebarHeading>
-        <div className="border border-t-0 border-border p-4">
+        <div className="border border-t-0 border-[#e6e6e6] p-4 bg-white">
           <div className="relative mb-4 h-[94px] w-[244px] max-w-full">
             <Image
               src="/images/bg_hotro.png"
@@ -78,7 +85,7 @@ export function CategorySidebar() {
 
       <div>
         <SidebarHeading>Quảng cáo</SidebarHeading>
-        <div className="border border-t-0 border-border">
+        <div className="border border-t-0 border-[#e6e6e6] bg-white">
           <Image
             src="/images/e5-2168.png"
             alt="Quảng cáo"
