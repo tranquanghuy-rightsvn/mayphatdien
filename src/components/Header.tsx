@@ -44,43 +44,34 @@ export function Header() {
           />
         </Link>
 
-        <div className="hidden items-center gap-8 lg:flex">
-          <div className="flex items-center gap-1.5">
-            <span className="flex size-4 shrink-0 items-center justify-center rounded-[3px] bg-black">
-              <Phone className="size-2.5 text-white" fill="white" />
-            </span>
-            <span className="text-[13.6px] font-normal text-black">
-              {siteInfo.hotline.split("–")[0].trim()}
-            </span>
+        <div className="hidden flex-col items-end gap-2 lg:flex">
+          <div className="flex items-center gap-8">
+            <div className="flex items-center gap-1.5">
+              <span className="flex size-4 shrink-0 items-center justify-center rounded-[3px] bg-black">
+                <Phone className="size-2.5 text-white" fill="white" />
+              </span>
+              <span className="text-[13.6px] font-normal text-black">
+                {siteInfo.hotline.split("–")[0].trim()}
+              </span>
+            </div>
+            <div className="flex items-center overflow-hidden rounded border border-[#dddddd] bg-white">
+              <input
+                type="search"
+                placeholder="Nhập từ khóa tìm kiếm..."
+                className="w-[240px] bg-transparent px-3 py-2 text-[13px] outline-none placeholder:text-[#999]"
+              />
+              <button
+                aria-label="Tìm kiếm"
+                className="flex h-9 w-10 items-center justify-center bg-primary text-white hover:bg-[#cc0000]"
+              >
+                <Search className="size-4" />
+              </button>
+            </div>
           </div>
-          <div className="flex items-center overflow-hidden rounded border border-[#dddddd] bg-white">
-            <input
-              type="search"
-              placeholder="Nhập từ khóa tìm kiếm..."
-              className="w-[240px] bg-transparent px-3 py-2 text-[13px] outline-none placeholder:text-[#999]"
-            />
-            <button
-              aria-label="Tìm kiếm"
-              className="flex h-9 w-10 items-center justify-center bg-primary text-white hover:bg-[#cc0000]"
-            >
-              <Search className="size-4" />
-            </button>
-          </div>
-        </div>
 
-        <button
-          className="flex items-center gap-1.5 text-sm font-semibold text-foreground lg:hidden"
-          aria-label="Mở menu"
-          onClick={() => setMobileOpen(true)}
-        >
-          <Menu className="size-6" />
-          Menu
-        </button>
-      </div>
-
-      <nav className="hidden lg:block">
-        <ul className="mx-auto flex max-w-[1200px] items-stretch">
-          {navItems.map((item) => {
+          <nav>
+            <ul className="flex items-stretch">
+              {navItems.map((item) => {
             const active =
               item.href === "/"
                 ? pathname === "/"
@@ -125,10 +116,21 @@ export function Header() {
                   </div>
                 )}
               </li>
-            );
-          })}
-        </ul>
-      </nav>
+                );
+              })}
+            </ul>
+          </nav>
+        </div>
+
+        <button
+          className="flex items-center gap-1.5 text-sm font-semibold text-foreground lg:hidden"
+          aria-label="Mở menu"
+          onClick={() => setMobileOpen(true)}
+        >
+          <Menu className="size-6" />
+          Menu
+        </button>
+      </div>
 
       {mobileOpen && (
         <div className="fixed inset-0 z-[60] lg:hidden">

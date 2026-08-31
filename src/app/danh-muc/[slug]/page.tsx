@@ -50,7 +50,7 @@ export default async function CategoryPage({
         </div>
       ) : (
         <p className="text-sm text-muted-foreground">
-          Không tìm thấy sản phẩm nào.
+          Không tìm thấy sản phẩm nào khớp với lựa chọn của bạn.
         </p>
       )}
     </StandardPageLayout>

@@ -150,7 +150,7 @@ export const newsArticles: NewsArticle[] = [
     title: "Toyota Việt Nam giới thiệu Hilux phiên bản cải tiến 2018",
     date: "15/06/2019",
     author: "Trần Hoàng Quân",
-    image: sharedNewsImage,
+    image: "/images/toyota-da-nang-114-0251.jpg",
     promoted: true,
     excerpt:
       "Toyota Việt Nam chính thức giới thiệu loạt phim ngắn về “Chuỗi dịch vụ giá trị gia tăng” với sự góp mặt của diễn viên chính là nghệ sỹ nhạc Rap Suboi – đồng thời cũng là Đại sứ thương hiệu của Toyota Việt Nam.",
@@ -164,7 +164,7 @@ export const newsArticles: NewsArticle[] = [
     title: "Toyota Việt Nam giới thiệu Fortuner phiên bản 2018",
     date: "15/06/2019",
     author: "Trần Hoàng Quân",
-    image: sharedNewsImage,
+    image: "/images/toyota-da-nang-113-6853.png",
     excerpt:
       "Toyota Việt Nam chính thức giới thiệu loạt phim ngắn về “Chuỗi dịch vụ giá trị gia tăng” với sự góp mặt của diễn viên chính là nghệ sỹ nhạc Rap Suboi – đồng thời cũng là Đại sứ thương hiệu của Toyota Việt Nam.",
     body: [
