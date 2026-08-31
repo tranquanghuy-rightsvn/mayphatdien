@@ -39,7 +39,7 @@ export default async function FlatPage({
     <>
       <Header />
       <main className="flex-1">
-        <div className="mx-auto max-w-[1200px] px-4 py-8">
+        <div className="mx-auto max-w-[1000px] px-4 py-8">
           <Breadcrumb
             items={[
               { label: "Trang chủ", href: "/" },

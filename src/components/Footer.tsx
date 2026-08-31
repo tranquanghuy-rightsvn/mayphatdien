@@ -4,7 +4,7 @@ import { footerLinks, siteInfo } from "@/lib/data";
 export function Footer() {
   return (
     <footer className="mt-auto bg-[#f4f4f4] pt-10 pb-6 text-sm text-foreground">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-4 sm:grid-cols-3">
+      <div className="mx-auto grid max-w-[1000px] grid-cols-1 gap-8 px-4 sm:grid-cols-3">
         <div>
           <h3 className="mb-3 text-base font-bold text-[#446084]">
             {siteInfo.companyName}
@@ -53,7 +53,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-8 max-w-[1200px] border-t border-border px-4 pt-4 text-xs text-muted-foreground">
+      <div className="mx-auto mt-8 max-w-[1000px] border-t border-border px-4 pt-4 text-xs text-muted-foreground">
         © Bản quyền thuộc về {siteInfo.name} Thiết kế bởi{" "}
         <a
           href="https://webmatrix.vn/"

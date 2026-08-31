@@ -32,7 +32,7 @@ export function Header() {
         backgroundSize: "100% auto",
       }}
     >
-      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-4 py-3">
+      <div className="mx-auto flex max-w-[1000px] items-center justify-between gap-6 px-4 py-3">
         <Link href="/" className="shrink-0">
           <Image
             src={siteInfo.logo}
@@ -54,15 +54,15 @@ export function Header() {
                 {siteInfo.hotline.split("–")[0].trim()}
               </span>
             </div>
-            <div className="flex items-center overflow-hidden rounded border border-[#dddddd] bg-white">
+            <div className="relative flex items-center">
               <input
                 type="search"
                 placeholder="Nhập từ khóa tìm kiếm..."
-                className="w-[240px] bg-transparent px-3 py-2 text-[13px] outline-none placeholder:text-[#999]"
+                className="h-[34px] w-[250px] rounded-lg border border-black/[0.09] bg-black/[0.03] px-2.5 text-[13px] text-black outline-none placeholder:text-[#999]"
               />
               <button
                 aria-label="Tìm kiếm"
-                className="flex h-9 w-10 items-center justify-center bg-primary text-white hover:bg-[#cc0000]"
+                className="absolute right-0 flex h-[34px] w-[34px] items-center justify-center rounded-full text-black hover:bg-black/5"
               >
                 <Search className="size-4" />
               </button>
@@ -77,11 +77,14 @@ export function Header() {
                 ? pathname === "/"
                 : pathname.startsWith(item.href);
             return (
-              <li key={item.href} className="group relative">
+              <li
+                key={item.href}
+                className={item.hasDropdown ? "group/products" : undefined}
+              >
                 <Link
                   href={item.href}
                   className={cn(
-                    "relative flex items-center gap-1 whitespace-nowrap px-5 py-[13px] text-[13px] font-bold uppercase tracking-wide text-[#716f6b] transition-colors hover:text-primary",
+                    "block whitespace-nowrap px-5 py-[23px] text-[13px] font-bold uppercase tracking-wide leading-4 text-[#716f6b] transition-colors hover:text-primary",
                     active && "font-bold text-[rgba(17,17,17,0.85)]"
                   )}
                   style={{
@@ -93,26 +96,31 @@ export function Header() {
                   }}
                 >
                   {item.label}
-                  {item.hasDropdown && <ChevronDown className="size-3.5" />}
                 </Link>
                 {item.hasDropdown && (
-                  <div className="invisible absolute left-0 top-full z-50 w-56 rounded-md border border-border bg-white py-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100">
-                    {categories.map((cat) => (
-                      <Link
-                        key={cat.slug}
-                        href={`/danh-muc/${cat.slug}`}
-                        className="flex items-center gap-3 px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary"
-                      >
-                        <Image
-                          src={cat.icon}
-                          alt=""
-                          width={28}
-                          height={12}
-                          className="h-3 w-7 object-contain"
-                        />
-                        {cat.name}
-                      </Link>
-                    ))}
+                  <div className="invisible absolute inset-x-0 top-full z-50 opacity-0 transition-all group-hover/products:visible group-hover/products:opacity-100">
+                    <div className="mx-auto max-w-[1000px] border-t-2 border-[#ddd] bg-white px-4 py-1 shadow-[1px_1px_15px_rgba(0,0,0,0.15)]">
+                      <div className="flex flex-wrap">
+                        {categories.map((cat) => (
+                          <Link
+                            key={cat.slug}
+                            href={`/danh-muc/${cat.slug}`}
+                            className="flex w-1/6 flex-col items-center gap-2 px-2.5 py-2.5 text-center hover:bg-muted/40"
+                          >
+                            <Image
+                              src={cat.icon}
+                              alt=""
+                              width={120}
+                              height={51}
+                              className="h-[51px] w-auto object-contain"
+                            />
+                            <span className="text-[13px] font-bold text-[#d83e3c]">
+                              {cat.name}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 )}
               </li>

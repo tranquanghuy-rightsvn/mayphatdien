@@ -1,0 +1,161 @@
+- generic [active] [ref=f8e1]:
+  - banner [ref=f8e2]:
+    - generic [ref=f8e3]:
+      - link [ref=f8e4] [cursor=pointer]:
+        - /url: /
+        - img "Toyota 01" [ref=f8e5]
+      - button "Mở menu" [ref=f8e6]: Menu
+  - main [ref=f8e8]:
+    - generic [ref=f8e9]:
+      - button "Ảnh trước" [ref=f8e11]
+      - button "Ảnh kế tiếp" [ref=f8e14]
+      - generic [ref=f8e17]:
+        - button "Ảnh 1" [ref=f8e18]
+        - button "Ảnh 2" [ref=f8e19]
+        - button "Ảnh 3" [ref=f8e20]
+        - button "Ảnh 4" [ref=f8e21]
+    - generic [ref=f8e22]:
+      - generic [ref=f8e24]:
+        - generic [ref=f8e25]:
+          - heading "Sản phẩm mới" [level=2] [ref=f8e27]
+          - generic [ref=f8e29]:
+            - generic [ref=f8e30]:
+              - link [ref=f8e31] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-mt
+                - img "Vios 1.5E (MT)" [ref=f8e32]
+              - link "Vios 1.5E (MT)" [ref=f8e33] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-mt
+              - paragraph [ref=f8e34]: 531,000,000 ₫
+            - generic [ref=f8e35]:
+              - link [ref=f8e36] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-cvt
+                - img "Vios 1.5E (CVT)" [ref=f8e37]
+              - link "Vios 1.5E (CVT)" [ref=f8e38] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-cvt
+              - paragraph [ref=f8e39]: 531,000,000 ₫
+            - generic [ref=f8e40]:
+              - link [ref=f8e41] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5g-cvt
+                - img "Vios 1.5G (CVT)" [ref=f8e42]
+              - link "Vios 1.5G (CVT)" [ref=f8e43] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5g-cvt
+              - paragraph [ref=f8e44]: 531,000,000 ₫
+        - generic [ref=f8e45]:
+          - heading "Vios" [level=2] [ref=f8e47]
+          - generic [ref=f8e49]:
+            - generic [ref=f8e50]:
+              - link [ref=f8e51] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-mt
+                - img "Vios 1.5E (MT)" [ref=f8e52]
+              - link "Vios 1.5E (MT)" [ref=f8e53] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-mt
+              - paragraph [ref=f8e54]: 531,000,000 ₫
+            - generic [ref=f8e55]:
+              - link [ref=f8e56] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-cvt
+                - img "Vios 1.5E (CVT)" [ref=f8e57]
+              - link "Vios 1.5E (CVT)" [ref=f8e58] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-cvt
+              - paragraph [ref=f8e59]: 531,000,000 ₫
+            - generic [ref=f8e60]:
+              - link [ref=f8e61] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5g-cvt
+                - img "Vios 1.5G (CVT)" [ref=f8e62]
+              - link "Vios 1.5G (CVT)" [ref=f8e63] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5g-cvt
+              - paragraph [ref=f8e64]: 531,000,000 ₫
+        - generic [ref=f8e65]:
+          - heading "Innova" [level=2] [ref=f8e67]
+          - generic [ref=f8e69]:
+            - generic [ref=f8e70]:
+              - link [ref=f8e71] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-mt
+                - img "Vios 1.5E (MT)" [ref=f8e72]
+              - link "Vios 1.5E (MT)" [ref=f8e73] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-mt
+              - paragraph [ref=f8e74]: 531,000,000 ₫
+            - generic [ref=f8e75]:
+              - link [ref=f8e76] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-cvt
+                - img "Vios 1.5E (CVT)" [ref=f8e77]
+              - link "Vios 1.5E (CVT)" [ref=f8e78] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5e-cvt
+              - paragraph [ref=f8e79]: 531,000,000 ₫
+            - generic [ref=f8e80]:
+              - link [ref=f8e81] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5g-cvt
+                - img "Vios 1.5G (CVT)" [ref=f8e82]
+              - link "Vios 1.5G (CVT)" [ref=f8e83] [cursor=pointer]:
+                - /url: /san-pham/vios-1-5g-cvt
+              - paragraph [ref=f8e84]: 531,000,000 ₫
+      - generic [ref=f8e85]:
+        - generic [ref=f8e86]:
+          - heading "Tin tức sự kiện" [level=3] [ref=f8e87]
+          - list [ref=f8e88]:
+            - listitem [ref=f8e89]:
+              - link [ref=f8e90] [cursor=pointer]:
+                - /url: /toyota-viet-nam-gioi-thieu-hilux-phien-ban-cai-tien-2018
+                - img "Toyota Việt Nam giới thiệu Hilux phiên bản cải tiến 2018" [ref=f8e91]
+              - generic [ref=f8e92]:
+                - link "Toyota Việt Nam giới thiệu Hilux phiên bản cải tiến 2018" [ref=f8e93] [cursor=pointer]:
+                  - /url: /toyota-viet-nam-gioi-thieu-hilux-phien-ban-cai-tien-2018
+                - paragraph [ref=f8e94]: Hà Nội, ngày 09/07/2018 – Toyota Việt Nam giới thiệu phiên bản Hilux cải tiến cùng chuỗi dịch vụ giá trị gia tăng dành cho khách hàng.
+            - listitem [ref=f8e95]:
+              - link [ref=f8e96] [cursor=pointer]:
+                - /url: /toyota-viet-nam-gioi-thieu-fortuner-phien-ban-cai-tien-2018
+                - img "Toyota Việt Nam giới thiệu Fortuner phiên bản 2018" [ref=f8e97]
+              - generic [ref=f8e98]:
+                - link "Toyota Việt Nam giới thiệu Fortuner phiên bản 2018" [ref=f8e99] [cursor=pointer]:
+                  - /url: /toyota-viet-nam-gioi-thieu-fortuner-phien-ban-cai-tien-2018
+                - paragraph [ref=f8e100]: Hà Nội, ngày 09/07/2018 – Phiên bản Fortuner 2018 được Toyota Việt Nam giới thiệu cùng loạt hoạt động nâng cao chất lượng dịch vụ khách hàng.
+            - listitem [ref=f8e101]:
+              - link [ref=f8e102] [cursor=pointer]:
+                - /url: /toyota-viet-nam-ra-mat-loat-phim-ngan-gioi-thieu-chuoi-dich-vu-gia-tri-gia-tang-toyota
+                - img "Toyota ra mắt loạt phim ngắn về chuỗi giá trị tăng" [ref=f8e103]
+              - generic [ref=f8e104]:
+                - link "Toyota ra mắt loạt phim ngắn về chuỗi giá trị tăng" [ref=f8e105] [cursor=pointer]:
+                  - /url: /toyota-viet-nam-ra-mat-loat-phim-ngan-gioi-thieu-chuoi-dich-vu-gia-tri-gia-tang-toyota
+                - paragraph [ref=f8e106]: Hà Nội, ngày 09/07/2018 – Toyota Việt Nam ra mắt loạt phim ngắn giới thiệu chuỗi dịch vụ giá trị gia tăng dành cho khách hàng.
+        - generic [ref=f8e107]:
+          - heading "Video clip" [level=3] [ref=f8e108]
+          - generic [ref=f8e109]: Video đang được cập nhật
+        - generic [ref=f8e110]:
+          - heading "Fanpage" [level=3] [ref=f8e111]
+          - generic [ref=f8e112]: Fanpage đang được cập nhật
+  - contentinfo [ref=f8e113]:
+    - generic [ref=f8e114]:
+      - generic [ref=f8e115]:
+        - heading "CÔNG TY TNHH MTV TOYOTA ĐÀ NẴNG" [level=3] [ref=f8e116]
+        - paragraph [ref=f8e117]: "Trụ sở : Phạm Văn Bạch, P. 15, Q. Tân Bình, Tp. HCM"
+        - paragraph [ref=f8e118]: "Email: email@gmail.com"
+        - paragraph [ref=f8e119]: "Hotline: 0999.999.999 – 0999.999.999"
+        - paragraph [ref=f8e120]: "Website: www.tenweb.vn"
+      - generic [ref=f8e121]:
+        - heading "CHÍNH SÁCH" [level=3] [ref=f8e122]
+        - list [ref=f8e123]:
+          - listitem [ref=f8e124]:
+            - link "» Chính sách bảo mật" [ref=f8e125] [cursor=pointer]:
+              - /url: /chinh-sach-bao-mat
+          - listitem [ref=f8e126]:
+            - link "» Chính sách hỗ trợ khách hàng" [ref=f8e127] [cursor=pointer]:
+              - /url: /chinh-sach-ho-tro-khach-hang
+          - listitem [ref=f8e128]:
+            - link "» Chính sách đặt hàng" [ref=f8e129] [cursor=pointer]:
+              - /url: /chinh-sach-dat-hang
+      - generic [ref=f8e130]:
+        - heading "HỖ TRỢ" [level=3] [ref=f8e131]
+        - list [ref=f8e132]:
+          - listitem [ref=f8e133]:
+            - link "» Hỗ trợ mua hàng" [ref=f8e134] [cursor=pointer]:
+              - /url: /ho-tro-mua-hang
+          - listitem [ref=f8e135]:
+            - link "» Hướng dẫn thanh toán" [ref=f8e136] [cursor=pointer]:
+              - /url: /huong-dan-thanh-toan
+          - listitem [ref=f8e137]:
+            - link "» Hướng dẫn giao nhận" [ref=f8e138] [cursor=pointer]:
+              - /url: /huong-dan-giao-nhan
+    - generic [ref=f8e139]:
+      - text: © Bản quyền thuộc về Toyota 01 Thiết kế bởi
+      - link "WEBMATRIX.VN" [ref=f8e140] [cursor=pointer]:
+        - /url: https://webmatrix.vn/
+  - button "Open Next.js Dev Tools" [ref=f8e146] [cursor=pointer]

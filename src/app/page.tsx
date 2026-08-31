@@ -19,7 +19,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroCarousel />
 
-        <div className="mx-auto max-w-[1200px] px-4 py-8">
+        <div className="mx-auto max-w-[1000px] px-4 py-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-[268px_1fr]">
             <aside className="hidden lg:block">
               <CategorySidebar />

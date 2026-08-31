@@ -1,0 +1,262 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1788157357306,
+  "projectRoot": "/home/hai/Workspaces/projects/toyota-clone",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=24",
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "16.3.0",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "19.2.4",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.4",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": "Node.js 24"
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "eslint",
+      "typecheck": "tsc --noEmit",
+      "check": "npm run lint && npm run typecheck && npm run build"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "public",
+      "scripts",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "master",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1788157357247,
+      "keyFiles": []
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 0,
+      "lastAccessed": 1788157357251,
+      "keyFiles": []
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 4,
+      "lastAccessed": 1788157357271,
+      "keyFiles": [
+        "download-assets.mjs",
+        "sync-agent-rules.sh",
+        "sync-skills.mjs"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 0,
+      "lastAccessed": 1788157357285,
+      "keyFiles": []
+    },
+    "docs/assets": {
+      "path": "docs/assets",
+      "purpose": "Static assets",
+      "fileCount": 1,
+      "lastAccessed": 1788157357288,
+      "keyFiles": [
+        "star-history.png"
+      ]
+    },
+    "src/app": {
+      "path": "src/app",
+      "purpose": "Application code",
+      "fileCount": 4,
+      "lastAccessed": 1788157357293,
+      "keyFiles": [
+        "favicon.ico",
+        "globals.css",
+        "layout.tsx"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 14,
+      "lastAccessed": 1788157357293,
+      "keyFiles": [
+        "Breadcrumb.tsx",
+        "CategorySidebar.tsx",
+        "ContactForm.tsx"
+      ]
+    },
+    "src/lib": {
+      "path": "src/lib",
+      "purpose": "Library code",
+      "fileCount": 2,
+      "lastAccessed": 1788157357294,
+      "keyFiles": [
+        "data.ts",
+        "utils.ts"
+      ]
+    },
+    "src/types": {
+      "path": "src/types",
+      "purpose": "Type definitions",
+      "fileCount": 2,
+      "lastAccessed": 1788157357295,
+      "keyFiles": [
+        "toyota.ts"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/components/Header.tsx",
+      "accessCount": 18,
+      "lastAccessed": 1788188116263,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/data.ts",
+      "accessCount": 17,
+      "lastAccessed": 1788166771034,
+      "type": "file"
+    },
+    {
+      "path": "src/components/SectionHeading.tsx",
+      "accessCount": 12,
+      "lastAccessed": 1788188137171,
+      "type": "file"
+    },
+    {
+      "path": "src/app/san-pham/[slug]/page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1788158613450,
+      "type": "file"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1788158329173,
+      "type": "file"
+    },
+    {
+      "path": "src/components/ProductGallery.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1788158600934,
+      "type": "file"
+    },
+    {
+      "path": "src/components/icons.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1788158651677,
+      "type": "file"
+    },
+    {
+      "path": "src/components/HeroCarousel.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1788187974992,
+      "type": "file"
+    },
+    {
+      "path": "src/components/HomeInfoWidgets.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1788158387908,
+      "type": "file"
+    },
+    {
+      "path": "src/components/ProductTabs.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1788158523166,
+      "type": "file"
+    },
+    {
+      "path": "src/app/category/khuyen-mai/page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1788159069292,
+      "type": "file"
+    },
+    {
+      "path": "src/components/CategorySidebar.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1788164242379,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1788158141826,
+      "type": "file"
+    },
+    {
+      "path": "src/app/category/tin-tuc/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1788159018427,
+      "type": "file"
+    },
+    {
+      "path": "src/types/toyota.ts",
+      "accessCount": 1,
+      "lastAccessed": 1788159047205,
+      "type": "file"
+    },
+    {
+      "path": "src/app/danh-muc/[slug]/page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1788166901881,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
