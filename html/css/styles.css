@@ -29,9 +29,6 @@ body.tdm-drawer-open{overflow:hidden}
 :root{--primary:#1b4f8f;--brand-red:#1b4f8f;--ring:#1b4f8f;--nav:#123a63}
 .w-1\/4{width:25%}
 .pt-3{padding-top:.75rem}
-/* nav active accent -> water blue (replace red rollover png) */
-header nav ul li a[style*="menu-rollover"],header nav ul li a[style*="menu-arrow"]{background-image:none!important}
-header nav ul li a[style*="menu-rollover"]{color:var(--primary)!important;box-shadow:inset 0 -3px 0 var(--primary)}
 /* hero banner captions */
 .hero-cap{pointer-events:none;position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:.55rem;padding:0 1.75rem 0 3.75rem;background:linear-gradient(90deg,rgba(6,16,32,.86) 0%,rgba(6,16,32,.6) 42%,rgba(6,16,32,.15) 72%,rgba(6,16,32,0) 90%)}
 .hero-cap__kicker{margin:0;font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#7db4ec;text-shadow:0 1px 6px rgba(0,0,0,.6)}
@@ -50,3 +47,11 @@ header nav ul li a[style*="menu-rollover"]{color:var(--primary)!important;box-sh
 .side-prod__txt{display:flex;flex-direction:column;justify-content:center;min-width:0}
 .side-prod__name{font-size:12.5px;font-weight:600;line-height:1.25;color:#334862;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .side-prod__price{margin-top:2px;font-size:12px;font-weight:700;color:var(--primary)}
+/* primary call-to-action button */
+.btn-cta{display:inline-flex;align-items:center;gap:.5rem;padding:.72rem 1.5rem;border-radius:9999px;background:var(--primary);color:#fff;font-weight:700;font-size:13px;line-height:1;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;box-shadow:0 6px 16px rgba(27,79,143,.28);transition:transform .15s ease,box-shadow .15s ease,background .15s ease;-webkit-tap-highlight-color:transparent}
+.btn-cta:hover{background:#153f73;box-shadow:0 10px 24px rgba(27,79,143,.4);transform:translateY(-1px)}
+.btn-cta:active{transform:translateY(0);box-shadow:0 4px 12px rgba(27,79,143,.3)}
+.btn-cta svg{width:16px;height:16px;flex:0 0 auto;stroke:currentColor}
+
+/* keep original arrow decoration on menu items; only recolor the active underline to water blue */
+header nav ul li a[style*="menu-rollover"]{background-image:none!important;color:var(--primary)!important;box-shadow:inset 0 -3px 0 var(--primary)}
