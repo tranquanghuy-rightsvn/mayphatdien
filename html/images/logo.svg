@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 72" role="img" aria-label="Trung Điện Hà Nội - Máy phát điện công nghiệp">
   <defs>
     <linearGradient id="td-badge" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e8433f"/>
-      <stop offset="1" stop-color="#b52c2a"/>
+      <stop offset="0" stop-color="#3a7cc0"/>
+      <stop offset="1" stop-color="#1b4f8f"/>
     </linearGradient>
   </defs>
   <rect x="2" y="8" width="56" height="56" rx="13" fill="url(#td-badge)"/>
   <path d="M13 41 q9 -11 17 0 t17 0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
   <path d="M33 11 L19 43 h10 l-4 20 22 -30 h-12 z" fill="#ffffff"/>
-  <text x="72" y="34" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="27" font-weight="800" fill="#b52c2a" letter-spacing="0.5">TRUNG ĐIỆN</text>
+  <text x="72" y="34" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="27" font-weight="800" fill="#1b4f8f" letter-spacing="0.5">TRUNG ĐIỆN</text>
   <text x="73" y="55" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#334862" letter-spacing="3.2">HÀ NỘI · MÁY PHÁT ĐIỆN</text>
 </svg>

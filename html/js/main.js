@@ -10,21 +10,19 @@
     if (!drawer) return;
     drawer.classList.remove("hidden");
     document.body.classList.add("tdm-drawer-open");
-    // wait one painted frame in the closed state, then slide in
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        drawer.classList.add("is-open");
-      });
-    });
+    // flush layout while still in the closed state, then slide in from the left
+    void drawer.getBoundingClientRect();
+    drawer.classList.add("is-open");
   }
 
   function closeDrawer() {
     if (!drawer) return;
     drawer.classList.remove("is-open");
-    document.body.classList.remove("tdm-drawer-open");
+    // keep scroll locked until the panel has finished sliding out
     window.setTimeout(function () {
       drawer.classList.add("hidden");
-    }, 260);
+      document.body.classList.remove("tdm-drawer-open");
+    }, 300);
   }
 
   if (openBtn && drawer) {
@@ -34,10 +32,7 @@
     });
     // close when a real navigation link inside the drawer is tapped
     drawer.querySelectorAll('a[href]').forEach(function (link) {
-      link.addEventListener("click", function () {
-        drawer.classList.remove("is-open");
-        document.body.classList.remove("tdm-drawer-open");
-      });
+      link.addEventListener("click", closeDrawer);
     });
     // close on Escape
     document.addEventListener("keydown", function (e) {
