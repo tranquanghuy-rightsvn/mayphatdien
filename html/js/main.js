@@ -6,14 +6,42 @@
   var closeBtns = document.querySelectorAll(".js-mobile-close");
   var drawer = document.querySelector(".js-mobile-drawer");
 
-  if (openBtn && drawer) {
-    openBtn.addEventListener("click", function () {
-      drawer.classList.remove("hidden");
-    });
-    closeBtns.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        drawer.classList.add("hidden");
+  function openDrawer() {
+    if (!drawer) return;
+    drawer.classList.remove("hidden");
+    document.body.classList.add("tdm-drawer-open");
+    // wait one painted frame in the closed state, then slide in
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        drawer.classList.add("is-open");
       });
+    });
+  }
+
+  function closeDrawer() {
+    if (!drawer) return;
+    drawer.classList.remove("is-open");
+    document.body.classList.remove("tdm-drawer-open");
+    window.setTimeout(function () {
+      drawer.classList.add("hidden");
+    }, 260);
+  }
+
+  if (openBtn && drawer) {
+    openBtn.addEventListener("click", openDrawer);
+    closeBtns.forEach(function (btn) {
+      btn.addEventListener("click", closeDrawer);
+    });
+    // close when a real navigation link inside the drawer is tapped
+    drawer.querySelectorAll('a[href]').forEach(function (link) {
+      link.addEventListener("click", function () {
+        drawer.classList.remove("is-open");
+        document.body.classList.remove("tdm-drawer-open");
+      });
+    });
+    // close on Escape
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !drawer.classList.contains("hidden")) closeDrawer();
     });
   }
 
