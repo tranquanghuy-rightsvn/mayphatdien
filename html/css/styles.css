@@ -3,10 +3,6 @@
 :root{--font-roboto:"Roboto", "Roboto Fallback"}
 /* ===== Trung Điện — responsive header / mobile menu ===== */
 html,body{overflow-x:hidden}
-.tdm-mobilebar{display:none;align-items:center;gap:.5rem;flex:0 0 auto}
-.tdm-mobilebar__call{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;flex:0 0 auto;background:#1b4f8f;color:#fff;border-radius:9999px;text-decoration:none}
-.tdm-mobilebar__toggle{display:inline-flex;align-items:center;justify-content:center;width:2.5rem;height:2.5rem;flex:0 0 auto;border:1px solid #e2e2e2;border-radius:.5rem;background:#fff;color:#334862;cursor:pointer;-webkit-tap-highlight-color:transparent}
-.tdm-mobilebar__toggle:active{background:#f1f2f4}
 .js-mobile-drawer{overflow:hidden;transition:opacity .22s ease}
 .js-mobile-drawer:not(.is-open){opacity:0}
 .js-mobile-drawer.is-open{opacity:1}
@@ -16,9 +12,7 @@ html,body{overflow-x:hidden}
 body.tdm-drawer-open{overflow:hidden}
 .js-mobile-drawer ul li>div>a{padding-top:.85rem;padding-bottom:.85rem}
 .js-mobile-drawer .js-mobile-products-panel a{padding-top:.6rem;padding-bottom:.6rem}
-@media (min-width:1024px){.tdm-mobilebar{display:none!important}}
 @media (max-width:1023.98px){
-  .tdm-mobilebar{display:flex}
   header[style*="bg-header"]{background-image:none!important;background-color:#fff;border-bottom:1px solid #e6e6e6;box-shadow:none}
   header>.mx-auto{padding:.5rem .75rem;gap:.5rem}
   header>.mx-auto>a{min-width:0;flex:0 1 auto}
