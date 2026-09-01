@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"agent-browser screenshot \\\".header-nav-main\\\" /tmp/nav-crop.png 2>&1\",\"description\":\"Screenshot the nav bar element\"}",
-  "error": "Exit code 1\n✗ CDP error (Page.captureScreenshot): Cannot take screenshot with 0 height.",
-  "timestamp": "2026-08-31T04:19:42.653Z",
-  "retry_count": 2
-}
